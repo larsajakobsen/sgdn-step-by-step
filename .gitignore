@@ -1,0 +1,27 @@
+# Visual Studio / IDEs
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+**/[Bb]in/
+**/[Oo]bj/
+
+# Azure Functions
+local.settings.json
+
+# NuGet
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

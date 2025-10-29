@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "SGDN.MCP.StepByStep": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7083",
+      "launchBrowser": false
+    }
+  }
+}
