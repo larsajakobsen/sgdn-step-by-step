@@ -86,7 +86,7 @@
     * Using Visual Studio or dotnet run
     * Should see this:
 
-        ![Function App running](image.png)
+        ![Function App running](img/image.png)
         
         
 8. Test the MCP server locally (option 1)
@@ -96,11 +96,11 @@
         https://modelcontextprotocol.io/docs/tools/inspector
     * Configure you MCP:
 
-        ![MCP Inspector config](image-6.png)
+        ![MCP Inspector config](img/image-6.png)
 
     * Test the tool:
 
-        ![MCP Inspector test](image-7.png)
+        ![MCP Inspector test](img/image-7.png)
 
 8. Test the MCP server locally (option 2, more fun)
 
@@ -123,15 +123,15 @@
         ``` 
     * Start the MCP-server
 
-        ![Start button](image-1.png)
+        ![Start button](img/image-1.png)
 
     * Make sure Github Copilot is in Agent mode
 
-        ![Agent Mode](image-2.png)
+        ![Agent Mode](img/image-2.png)
 
     * Ask about Drammen Autoco Eiendom AS
 
-        ![Ask the agent](image-3.png)
+        ![Ask the agent](img/image-3.png)
 
 9. Create Azure Function App
 
@@ -139,10 +139,10 @@
     * Create a new Azure Function App
         - Make sure to run on Windows
             - Chosing Flex Consumption will default to Linux, so choose the older Consumption model:
-            ![Consumption Model](image-5.png)
+            ![Consumption Model](img/image-5.png)
         - Use proper naming and use .NET 8 Isolated 
 
-            ![Function App Settings](image-4.png)
+            ![Function App Settings](img/image-4.png)
     * Click "Get publish profile" and download the profile in the newly created Azure Function App
 
 10. Publish to Azure Function App
@@ -156,15 +156,15 @@
     * Change to remote url
     * Get the "API Key" (mcp_extention) from the Azure Function App:
 
-        ![key](image-8.png)
+        ![key](img/image-8.png)
 
     * Add the key as a Header named "x-functions-key" in MCP Inspector
 
-        ![alt text](image-9.png)
+        ![alt text](img/image-9.png)
 
     * Or in mcp.json in VSCode:
 
-        ![alt text](image-10.png)
+        ![alt text](img/image-10.png)
 
 15. Create a Agent in Copilot Studio:
 
@@ -177,21 +177,21 @@
     * Select "Model Context Protocol"
     * Add correct configuration
 
-        ![alt text](image-11.png)
+        ![alt text](img/image-11.png)
 
         - The server url must be without "sse" in the end, eg. <your server>/runtime/webhooks/mcp
         - Add API Key (header) named "x-functions-key"
         - Click "Create"
     * Click "Connect" - "Create connection"
 
-        ![alt text](image-12.png)
+        ![alt text](img/image-12.png)
         - Add the key (App Keys -> mcp_extention) from the Azure Function App
     * Make sure the connection is ok
     * Click "Add to Agent"
 
 16. Test the Agent in the Chat window in Copilot Studio
 
-    ![alt text](image-13.png)
+    ![alt text](img/image-13.png)
 
 
 17. Add Agent to Teams or M365 Copilot
